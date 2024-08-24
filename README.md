@@ -18,4 +18,6 @@ To get started with DocuQ&A, follow these installation steps:
    ```bash
    git clone https://github.com/devrahulbanjara/DocuQ-A.git
    cd DocuQ-A
+   pip install -r requirements.txt
+   ```
 2. Install gcc 
