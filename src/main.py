@@ -1,14 +1,13 @@
 from model import LLMInference 
 from preprocess import PDFLoader 
 
-
-pdf_path = "/mnt/c/Users/pawan/Documents/DocuQ-A/data/raw/cv-template.pdf"
+pdf_path = "../../Downloads/CV.pdf"
 
 pdf_parser = PDFLoader(pdf_path)
 
 context = pdf_parser.pdf_text() 
-question = "What is this Document about ? "
+question = "Which school did he study in? "
 
 llm = LLMInference()
 res = llm.make_prediction(question, context )
-print(res)
+print(f"Question: {question} \nAnswer: {res['answer']} \nConfidence: {res['score']}")
