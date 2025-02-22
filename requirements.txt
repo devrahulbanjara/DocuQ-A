@@ -1,12 +1,7 @@
+fastapi
+uvicorn
 langchain
-numpy
-streamlit
-langchain-community
-streamlit
-PyPDF2
-unstructured
-nltk
+chromadb
 sentence-transformers
-langchain-huggingface
-faiss-cpu
-python-docx
+transformers
+pypdf
